@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "740570985448",
+    "project_id": "liinc-3fcd4",
+    "storage_bucket": "liinc-3fcd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740570985448:android:387adc13347ae27153ea5d",
+        "android_client_info": {
+          "package_name": "com.example.liinc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7PnjE09rSpRBO9AGB98mHO7HSXnBhJAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
