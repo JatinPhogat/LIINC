@@ -3,12 +3,144 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".PublishFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Publish" />
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find a passenger"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/my_grey" />
+
+
+        <EditText
+            android:id="@+id/pub_goingfrom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border_login_signup"
+            android:drawablePadding="8dp"
+            android:hint="From"
+            android:paddingLeft="19dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/pub_goingto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_login_signup"
+            android:drawablePadding="8dp"
+            android:hint="To"
+            android:paddingLeft="19dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="4dp"
+            android:background="@color/my_blue"
+            android:layout_marginLeft="1dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/baseline_calendar_month_24" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="31 May 2023"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/ib_time"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:src="@drawable/baseline_access_time_24" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="01:00 PM"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="370dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="4dp"
+            android:background="@color/my_blue"
+            android:layout_marginLeft="1dp"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/pub_numofpassengers"
+            android:background="@drawable/border_login_signup"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="Number Of passengers"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/outline_people_outline_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/pub_vehiclename"
+            android:background="@drawable/border_login_signup"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:hint="Vehicle Name"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/outline_directions_car_filled_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/findcopassengerbutton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/my_blue"
+            android:text="Find a Co-passenger"
+            android:textColor="@color/white"
+            app:cornerRadius = "20dp"
+            android:textSize="17sp" />
+
+    </LinearLayout>
 
 </FrameLayout>

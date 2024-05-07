@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private YourTripsFragment yourTripsFragment;
     private PublishFragment publishFragment;
     private SearchFragment searchFragment;
+
     private NotificationsFragment notificationsFragment;
 
     @Override
