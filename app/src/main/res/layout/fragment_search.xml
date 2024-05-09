@@ -39,7 +39,7 @@
                 android:textColor="@color/my_grey" />
 
             <EditText
-                android:id="@+id/signup_name"
+                android:id="@+id/search_ride_from"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="40dp"
@@ -54,7 +54,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/signup_email"
+                android:id="@+id/search_ride_to"
                 android:background="@drawable/border_login_signup"
                 android:layout_marginTop="20dp"
                 android:paddingLeft="19dp"
@@ -119,7 +119,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Search"
-                android:id="@+id/signup_button"
+                android:id="@+id/search_ride_button"
                 android:textSize="17sp"
                 android:layout_marginTop="100dp"
                 android:textColor="@color/white"

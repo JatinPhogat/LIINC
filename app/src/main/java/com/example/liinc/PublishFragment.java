@@ -9,10 +9,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
+
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Calendar;
 
@@ -72,6 +78,30 @@ public class PublishFragment extends Fragment {
         ImageButton dateButton = view.findViewById(R.id.ib_date);
         TextView dateTextView = view.findViewById(R.id.tv_date);
         dateButton.setTag(dateTextView); // Store the reference to the dateTextView in the dateButton
+        Button findCopassengerButton= view.findViewById(R.id.findcopassengerbutton);
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+
+        findCopassengerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Get the values from the EditText fields
+                String goingFrom = ((EditText) view.findViewById(R.id.pub_goingfrom)).getText().toString();
+                String goingTo = ((EditText) view.findViewById(R.id.pub_goingto)).getText().toString();
+                String date = ((TextView) view.findViewById(R.id.tv_date)).getText().toString();
+                String time = ((TextView) view.findViewById(R.id.tv_time)).getText().toString();
+                int numOfPassengers = Integer.parseInt(((EditText) view.findViewById(R.id.pub_numofpassengers)).getText().toString());
+                String vehicleName = ((EditText) view.findViewById(R.id.pub_vehiclename)).getText().toString();
+
+                // Create a new document reference in the Firestore collection
+                DocumentReference docRef = db.collection("rides").document();
+
+                // Set the values for the fields in the document
+                docRef.set(new Ride(goingFrom, goingTo, date, time, numOfPassengers, vehicleName));
+
+                Toast.makeText(getContext(), "Uploaded", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         dateButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -20,5 +20,9 @@
         android:id="@+id/navigation_notifications"
         android:title="@string/notifications"
         android:icon="@drawable/baseline_chat_bubble_outline_24" />
+    <item
+        android:id="@+id/navigation_PROFILE"
+        android:title="Profile"
+        android:icon="@drawable/outline_person_outline_24" />
 
 </menu>

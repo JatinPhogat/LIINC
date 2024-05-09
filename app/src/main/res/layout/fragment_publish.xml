@@ -9,6 +9,7 @@
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="16dp">
@@ -80,7 +81,7 @@
             <ImageButton
                 android:id="@+id/ib_time"
                 android:layout_width="wrap_content"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="110dp"
                 android:layout_height="wrap_content"
                 android:background="?android:selectableItemBackground"
                 android:src="@drawable/baseline_access_time_24" />
@@ -112,7 +113,7 @@
             android:layout_marginTop="20dp"
             android:padding="8dp"
             android:hint="Number Of passengers"
-            android:inputType="textPassword"
+            android:inputType="number"
             android:drawableLeft="@drawable/outline_people_outline_24"
             android:drawablePadding="8dp"
             android:textColor="@color/black"/>
@@ -125,7 +126,6 @@
             android:layout_marginTop="20dp"
             android:padding="8dp"
             android:hint="Vehicle Name"
-            android:inputType="textPassword"
             android:drawableLeft="@drawable/outline_directions_car_filled_24"
             android:drawablePadding="8dp"
             android:textColor="@color/black"/>
