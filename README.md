@@ -45,10 +45,5 @@ git clone https://github.com/JatinPhogat/LIINC
 - Connect an **Android emulator** or **physical device**.
 - Click **Run ▶️** in Android Studio.
 
-## 📌 Future Improvements
-🚀 **UI Enhancements** – Improve the interface for better user experience.  
-🚀 **Real-time Tracking** – Integrate Google Maps for live location updates.  
-🚀 **Payment Integration** – Enable in-app payments for booking rides.  
-
 ---
 This project serves as a **basic prototype** for carpooling applications and can be extended with more advanced features. Happy coding! 🚀
