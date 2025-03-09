@@ -24,9 +24,9 @@ This project is a **basic carpooling application** inspired by BlaBlaCar, develo
 ```
 
 ## 🛠️ Tech Stack
-- **Language:** Java ☕
-- **Framework:** Android SDK 📱
-- **IDE:** Android Studio 🛠️
+- **Language:** Java 
+- **Framework:** Android SDK 
+- **IDE:** Android Studio 
 
 ## 🚀 Getting Started
 Follow these simple steps to set up and run the project.
