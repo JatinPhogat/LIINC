@@ -4,20 +4,20 @@
 This project is a **basic carpooling application** inspired by BlaBlaCar, developed in **Java for Android**. It allows users to **offer rides** and **book seats**, promoting **shared travel** and **cost-efficient commuting**. The app focuses on a simple user experience, making it easier to connect drivers and passengers.
 
 ## 🎯 Features
-✅ **User Registration & Authentication** – Simple sign-up/login for riders and drivers.  
-✅ **Ride Listing & Booking** – Drivers can create ride listings, and passengers can book seats.  
-✅ **Location-Based Search** – Find rides based on start and destination points.  
-✅ **Basic UI with Essential Functionalities** – Minimal yet effective interface for usability.  
-✅ **Basic Fare Estimation** – Provides approximate travel costs.
+ **User Registration & Authentication** – Simple sign-up/login for riders and drivers.  
+ **Ride Listing & Booking** – Drivers can create ride listings, and passengers can book seats.  
+ **Location-Based Search** – Find rides based on start and destination points.  
+ **Basic UI with Essential Functionalities** – Minimal yet effective interface for usability.  
+ **Basic Fare Estimation** – Provides approximate travel costs.
 
 ## 📂 Project Structure
 ```
-📁 LLINC
- ├── 📂 app
- │   ├── 📂 src
- │   │   ├── 📂 main
- │   │   │   ├── 📂 java/com/example/LLINC  # Java source files
- │   │   │   ├── 📂 res  # UI layouts, drawables, values
+ LLINC
+ ├──  app
+ │   ├──  src
+ │   │   ├──  main
+ │   │   │   ├──  java/com/example/LLINC  # Java source files
+ │   │   │   ├──  res  # UI layouts, drawables, values
  │   │   │   ├── AndroidManifest.xml  # Permissions & app config
  │   ├── build.gradle  # Project dependencies
  ├── README.md  # Project documentation
